@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overleaf Community Edition - صفحة المشروع</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .btn-primary {
+            background: #4CAF50;
+            color: white;
+        }
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .features {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+        .status {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+        }
+        .status-good { color: #4CAF50; }
+        .status-warning { color: #FF9800; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Overleaf Community Edition</h1>
+        <p>محرر LaTeX تعاوني مفتوح المصدر - جاهز للنشر!</p>
+        
+        <div class="buttons">
+            <a href="QUICK_DEPLOY.md" class="btn btn-primary">📖 دليل النشر السريع</a>
+            <a href="DEPLOYMENT.md" class="btn btn-secondary">📚 دليل النشر الشامل</a>
+            <a href="GITHUB_SETUP.md" class="btn btn-secondary">⚙️ إعداد GitHub</a>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>🐳 Docker</h3>
+                <p>نشر سهل بـ Docker</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 SSL</h3>
+                <p>شهادات SSL تلقائية</p>
+            </div>
+            <div class="feature">
+                <h3>📊 مراقبة</h3>
+                <p>نظام مراقبة مدمج</p>
+            </div>
+            <div class="feature">
+                <h3>☁️ السحابة</h3>
+                <p>نشر على منصات مختلفة</p>
+            </div>
+        </div>
+
+        <div class="status">
+            <h3>📊 حالة المشروع:</h3>
+            <div class="status-good">✅ CI/CD Test: ناجح</div>
+            <div class="status-good">✅ Build: ناجح</div>
+            <div class="status-good">✅ جاهز للنشر</div>
+        </div>
+
+        <p style="margin-top: 3rem; opacity: 0.7;">
+            <strong>بدأ النشر؟</strong><br>
+            <code>git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git</code><br>
+            <code>./start-overleaf.sh</code> أو <code>./start-overleaf.ps1</code>
+        </p>
+    </div>
+</body>
+</html>
